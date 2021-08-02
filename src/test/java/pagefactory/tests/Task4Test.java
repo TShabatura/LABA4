@@ -35,21 +35,4 @@ public class Task4Test extends BaseTest {
         getNotebookPage().waitForVisibilityOfElement(60, getNotebookPage().getPopup());
         Assert.assertTrue(getCartPopup().getTotalAmountOfCart() < rozetkaFilter.getTotalAmount());
     }
-    @Test
-    public void task(){
-        List<RozetkaFilter> rozetkaFilters = new XmlToObject().inputData();
-        System.out.println(rozetkaFilters);
-        System.out.println(rozetkaFilters.get(0));
-        System.out.println(rozetkaFilters.get(0).getProducer());
-        int countOfFilters = rozetkaFilters.size();
-        Object[] objects = new Object[]{rozetkaFilters};
-        System.out.println(objects);
-        System.out.println(countOfFilters);
-//        for (int i=0; i<countOfFilters; i++){
-//        }
-        for (int i = 0; i < rozetkaFilters.size(); i++) {
-            for (int j = 0; j < 3; j++){
-            }
-        }
-    }
 }
